@@ -8,6 +8,7 @@ import org.json.JSONArray;
 import org.json.JSONObject;
 import structures.Alliance;
 import structures.Award;
+import structures.MatchResult;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -107,5 +108,18 @@ public class FRCAPI {
         } else {
             return null;
         }
+    }
+
+    public List<MatchResult> getMatchResults(int season, String eventCode) {
+        JSONObject response = sendGet(String.format("/%d/matches/%s", season, eventCode));
+
+        List<MatchResult> results = new ArrayList<>();
+        JSONArray jsonArray = response.getJSONArray("Matches");
+
+        for(int i = 0; i < jsonArray.length(); i++) {
+            results.add(MatchResult.getFromJson(jsonArray.getJSONObject(i)));
+        }
+
+        return results;
     }
 }
