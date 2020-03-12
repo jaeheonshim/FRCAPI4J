@@ -40,7 +40,7 @@ public class FRCAPI {
 
             if (entity != null) {
                 String result = EntityUtils.toString(entity);
-                if(result.charAt(0) != '{') {
+                if (result.charAt(0) != '{') {
                     throw new RuntimeException(result);
                 } else {
                     return new JSONObject(result);
@@ -206,7 +206,7 @@ public class FRCAPI {
     }
 
     public DistrictRankings getDistrictRankings(@NotNull String districtCode, Integer teamNumber, Integer top, Integer page) {
-        if(this.season != 0) {
+        if (this.season != 0) {
             return getDistrictRankings(this.season, districtCode, teamNumber, top, page);
         } else {
             return null;
@@ -226,10 +226,44 @@ public class FRCAPI {
         List<ScheduledMatch> scheduledMatchList = new ArrayList<>();
         JSONArray scheduledMatches = response.getJSONArray("Schedule");
 
-        for(int i = 0; i < scheduledMatches.length(); i++) {
+        for (int i = 0; i < scheduledMatches.length(); i++) {
             scheduledMatchList.add(ScheduledMatch.getFromJson(scheduledMatches.getJSONObject(i)));
         }
 
         return scheduledMatchList;
+    }
+
+    public List<ScheduledMatch> getEventSchedule(@NotNull String eventCode, TournamentLevel tournamentLevel, Integer teamNumber, Integer start, Integer end) {
+        if (this.season != 0) {
+            return getEventSchedule(this.season, eventCode, tournamentLevel, teamNumber, start, end);
+        } else {
+            return null;
+        }
+    }
+
+    public List<HybridSchedule> getHybridSchedule(int season, @NotNull String eventCode, @NotNull TournamentLevel tournamentLevel, Integer start, Integer end) {
+        JSONObject response = sendGet(
+                formRequest(season, "schedule/" + eventCode + "/" + tournamentLevel.toString() + "/hybrid", "",
+                        new Parameter("start", start),
+                        new Parameter("end", end)
+                )
+        );
+
+        List<HybridSchedule> hybridScheduleList = new ArrayList<>();
+        JSONArray hybridSchedules = response.getJSONArray("Schedule");
+
+        for(int i = 0; i < hybridSchedules.length(); i++) {
+            hybridScheduleList.add(HybridSchedule.getFromJson(hybridSchedules.getJSONObject(i)));
+        }
+
+        return hybridScheduleList;
+    }
+
+    public List<HybridSchedule> getHybridSchedule(@NotNull String eventCode, @NotNull TournamentLevel tournamentLevel, Integer start, Integer end) {
+        if(this.season != 0) {
+            return getHybridSchedule(this.season, eventCode, tournamentLevel, start, end);
+        } else {
+            return null;
+        }
     }
 }
