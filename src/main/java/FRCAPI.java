@@ -11,6 +11,7 @@ import org.json.JSONObject;
 import structures.*;
 
 import java.io.IOException;
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Base64;
 import java.util.List;
@@ -298,5 +299,33 @@ public class FRCAPI {
         }
 
         return eventList;
+    }
+
+    public List<Event> getEvents(String eventCode, Integer teamNumber, String districtCode, Boolean excludeDistrict) {
+        if(this.season != 0) {
+            return getEvents(this.season, eventCode, teamNumber, districtCode, excludeDistrict);
+        } else {
+            return null;
+        }
+    }
+
+    public List<District> getDistricts(int season) {
+        JSONObject response = sendGet(formRequest(season, "districts", ""));
+
+        List<District> districtList = new ArrayList<>();
+        JSONArray districts = response.getJSONArray("districts");
+        for(int i = 0; i < districts.length(); i++) {
+            districtList.add(District.getFromJson(districts.getJSONObject(i)));
+        }
+
+        return districtList;
+    }
+
+    public List<District> getDistricts() {
+        if(this.season != 0) {
+            return getDistricts(this.season);
+        } else {
+            return null;
+        }
     }
 }
