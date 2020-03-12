@@ -1,7 +1,8 @@
-package structures;
+package structures.listings;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
+import structures.Team;
 
 import java.util.ArrayList;
 import java.util.List;

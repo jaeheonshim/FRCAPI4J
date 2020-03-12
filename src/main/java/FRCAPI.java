@@ -1,5 +1,4 @@
 import com.sun.istack.internal.NotNull;
-import jdk.management.resource.internal.TotalResourceContext;
 import org.apache.http.HttpEntity;
 import org.apache.http.client.methods.CloseableHttpResponse;
 import org.apache.http.client.methods.HttpGet;
@@ -9,9 +8,11 @@ import org.apache.http.util.EntityUtils;
 import org.json.JSONArray;
 import org.json.JSONObject;
 import structures.*;
+import structures.listings.DistrictRankings;
+import structures.listings.TeamAvatarListings;
+import structures.listings.TeamListings;
 
 import java.io.IOException;
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Base64;
 import java.util.List;
@@ -374,5 +375,17 @@ public class FRCAPI {
         } else {
             return null;
         }
+    }
+
+    public TeamAvatarListings getAvatarListings(int season, Integer teamNumber, String eventCode, Integer page) {
+        JSONObject response = sendGet(
+                formRequest(season, "avatars", "",
+                        new Parameter("eventCode", eventCode),
+                        new Parameter("teamNumber", teamNumber),
+                        new Parameter("page", page)
+                )
+        );
+
+        return TeamAvatarListings.getFromJson(response);
     }
 }
