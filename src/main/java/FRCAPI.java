@@ -342,6 +342,14 @@ public class FRCAPI {
         return TeamListings.getFromJson(response);
     }
 
+    public TeamListings getTeamListings(Integer teamNumber, String eventCode, String districtCode, Integer page) {
+        if(this.season != 0) {
+            return getTeamListings(this.season, teamNumber, eventCode, districtCode, page);
+        } else {
+            return null;
+        }
+    }
+
     public List<Registration> getRegistrations(int season, Integer teamNumber, String eventCode) {
         JSONObject response = sendGet(
                 formRequest(season, "registrations", "",
@@ -358,5 +366,13 @@ public class FRCAPI {
         }
 
         return registrationList;
+    }
+
+    public List<Registration> getRegistrations(Integer teamNumber, String eventCode) {
+        if(this.season != 0) {
+            return getRegistrations(this.season, teamNumber, eventCode);
+        } else {
+            return null;
+        }
     }
 }
