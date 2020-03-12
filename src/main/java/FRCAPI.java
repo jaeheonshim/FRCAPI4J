@@ -1,4 +1,5 @@
 import com.sun.istack.internal.NotNull;
+import jdk.management.resource.internal.TotalResourceContext;
 import org.apache.http.HttpEntity;
 import org.apache.http.client.methods.CloseableHttpResponse;
 import org.apache.http.client.methods.HttpGet;
@@ -137,7 +138,7 @@ public class FRCAPI {
         }
     }
 
-    public List<MatchResult> getMatchResults(int season, @NotNull String eventCode, MatchResult.TournamentLevel tournamentLevel, Integer teamNumber, Integer matchNumber, Integer start, Integer end) {
+    public List<MatchResult> getMatchResults(int season, @NotNull String eventCode, TournamentLevel tournamentLevel, Integer teamNumber, Integer matchNumber, Integer start, Integer end) {
         JSONObject response = sendGet(
                 formRequest(season, "matches", eventCode,
                         new Parameter("tournamentLevel", tournamentLevel),
@@ -158,7 +159,7 @@ public class FRCAPI {
         return results;
     }
 
-    public List<MatchResult> getMatchResults(@NotNull String eventCode, MatchResult.TournamentLevel tournamentLevel, Integer teamNumber, Integer matchNumber, Integer start, Integer end) {
+    public List<MatchResult> getMatchResults(@NotNull String eventCode, TournamentLevel tournamentLevel, Integer teamNumber, Integer matchNumber, Integer start, Integer end) {
         if (this.season != 0) {
             return getMatchResults(this.season, eventCode, tournamentLevel, teamNumber, matchNumber, start, end);
         } else {
@@ -202,5 +203,33 @@ public class FRCAPI {
         );
 
         return DistrictRankings.getFromJson(response);
+    }
+
+    public DistrictRankings getDistrictRankings(@NotNull String districtCode, Integer teamNumber, Integer top, Integer page) {
+        if(this.season != 0) {
+            return getDistrictRankings(this.season, districtCode, teamNumber, top, page);
+        } else {
+            return null;
+        }
+    }
+
+    public List<ScheduledMatch> getEventSchedule(int season, @NotNull String eventCode, TournamentLevel tournamentLevel, Integer teamNumber, Integer start, Integer end) {
+        JSONObject response = sendGet(
+                formRequest(season, "schedule", eventCode,
+                        new Parameter("tournamentLevel", tournamentLevel.toString()),
+                        new Parameter("teamNumber", teamNumber),
+                        new Parameter("start", start),
+                        new Parameter("end", end)
+                )
+        );
+
+        List<ScheduledMatch> scheduledMatchList = new ArrayList<>();
+        JSONArray scheduledMatches = response.getJSONArray("Schedule");
+
+        for(int i = 0; i < scheduledMatches.length(); i++) {
+            scheduledMatchList.add(ScheduledMatch.getFromJson(scheduledMatches.getJSONObject(i)));
+        }
+
+        return scheduledMatchList;
     }
 }

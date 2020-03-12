@@ -86,10 +86,6 @@ public class MatchResult {
                 teamsList);
     }
 
-    public enum TournamentLevel {
-        QUALIFICATION, PLAYOFF
-    }
-
     public LocalDateTime getActualStartTime() {
         return actualStartTime;
     }
