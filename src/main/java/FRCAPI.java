@@ -328,4 +328,17 @@ public class FRCAPI {
             return null;
         }
     }
+
+    public TeamListings getTeamListings(int season, Integer teamNumber, String eventCode, String districtCode, Integer page) {
+        JSONObject response = sendGet(
+                formRequest(season, "teams", "",
+                        new Parameter("teamNumber", teamNumber),
+                        new Parameter("eventCode", eventCode),
+                        new Parameter("districtCode", districtCode),
+                        new Parameter("page", page)
+                        )
+        );
+
+        return TeamListings.getFromJson(response);
+    }
 }
