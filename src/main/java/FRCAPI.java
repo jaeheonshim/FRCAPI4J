@@ -341,4 +341,22 @@ public class FRCAPI {
 
         return TeamListings.getFromJson(response);
     }
+
+    public List<Registration> getRegistrations(int season, Integer teamNumber, String eventCode) {
+        JSONObject response = sendGet(
+                formRequest(season, "registrations", "",
+                        new Parameter("eventCode", eventCode),
+                        new Parameter("teamNumber", teamNumber)
+                        )
+        );
+
+        List<Registration> registrationList = new ArrayList<>();
+        JSONArray registrations = response.getJSONArray("Registrations");
+
+        for(int i = 0; i < registrations.length(); i++) {
+            registrationList.add(Registration.getFromJson(registrations.getJSONObject(i)));
+        }
+
+        return registrationList;
+    }
 }
