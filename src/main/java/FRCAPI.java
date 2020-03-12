@@ -279,4 +279,24 @@ public class FRCAPI {
             return null;
         }
     }
+
+    public List<Event> getEvents(int season, String eventCode, Integer teamNumber, String districtCode, Boolean excludeDistrict) {
+        JSONObject response = sendGet(
+                formRequest(season, "events", "",
+                        new Parameter("eventCode", eventCode),
+                        new Parameter("teamNumber", teamNumber),
+                        new Parameter("districtCode", districtCode),
+                        new Parameter("excludeDistrict", excludeDistrict)
+                )
+        );
+
+        List<Event> eventList = new ArrayList<>();
+        JSONArray events = response.getJSONArray("Events");
+
+        for(int i = 0; i < events.length(); i++) {
+            eventList.add(Event.getFromJson(events.getJSONObject(i)));
+        }
+
+        return eventList;
+    }
 }
