@@ -48,7 +48,7 @@ public class MatchResult {
         }
 
         public static Team getFromJson(JSONObject json) {
-            return new Team(json.optInt("teamNumber"), json.optString("station"), json.optBoolean("disqualified", false));
+            return new Team(json.optInt("teamNumber"), json.optString("station"), json.optBoolean("dq", false));
         }
 
         public int getTeamNumber() {
@@ -78,10 +78,10 @@ public class MatchResult {
                 jsonObject.optInt("matchNumber"),
                 LocalDateTime.parse(jsonObject.optString("postResultTime")),
                 jsonObject.optInt("scoreRedFinal"),
-                jsonObject.optInt("scoreRedFoul "),
-                jsonObject.optInt("scoreRedAuto "),
+                jsonObject.optInt("scoreRedFoul"),
+                jsonObject.optInt("scoreRedAuto"),
                 jsonObject.optInt("scoreBlueFinal"),
-                jsonObject.optInt("scoreBlueFoul "),
+                jsonObject.optInt("scoreBlueFoul"),
                 jsonObject.optInt("scoreBlueAuto"),
                 teamsList);
     }

@@ -10,6 +10,7 @@ import org.json.JSONObject;
 import structures.Alliance;
 import structures.Award;
 import structures.MatchResult;
+import structures.Ranking;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -163,8 +164,29 @@ public class FRCAPI {
         }
     }
 
-    public static void main(String[] args) {
-        FRCAPI api = new FRCAPI("jaeheonshim", "***REMOVED***");
-        System.out.println(api.getMatchResults(2017, "CMPMO", MatchResult.TournamentLevel.PLAYOFF, null, null, null, null).get(0).getTournamentLevel());
+    public List<Ranking> getMatchRankings(int season, @NotNull String eventCode, Integer teamNumber, Integer top) {
+        JSONObject response = sendGet(
+                formRequest(season, "rankings", eventCode,
+                        new Parameter("teamNumber", teamNumber),
+                        new Parameter("top", top)
+                )
+        );
+
+        List<Ranking> rankings = new ArrayList<>();
+        JSONArray jsonArray = response.getJSONArray("Rankings");
+
+        for (int i = 0; i < jsonArray.length(); i++) {
+            rankings.add(Ranking.getFromJson(jsonArray.getJSONObject(i)));
+        }
+
+        return rankings;
+    }
+
+    public List<Ranking> getMatchRankings(@NotNull String eventCode, Integer teamNumber, Integer top) {
+        if (this.season != 0) {
+            return getMatchRankings(this.season, eventCode, teamNumber, top);
+        } else {
+            return null;
+        }
     }
 }
