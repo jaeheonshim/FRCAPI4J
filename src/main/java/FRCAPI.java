@@ -252,7 +252,7 @@ public class FRCAPI {
         List<HybridSchedule> hybridScheduleList = new ArrayList<>();
         JSONArray hybridSchedules = response.getJSONArray("Schedule");
 
-        for(int i = 0; i < hybridSchedules.length(); i++) {
+        for (int i = 0; i < hybridSchedules.length(); i++) {
             hybridScheduleList.add(HybridSchedule.getFromJson(hybridSchedules.getJSONObject(i)));
         }
 
@@ -260,8 +260,21 @@ public class FRCAPI {
     }
 
     public List<HybridSchedule> getHybridSchedule(@NotNull String eventCode, @NotNull TournamentLevel tournamentLevel, Integer start, Integer end) {
-        if(this.season != 0) {
+        if (this.season != 0) {
             return getHybridSchedule(this.season, eventCode, tournamentLevel, start, end);
+        } else {
+            return null;
+        }
+    }
+
+    public Season getSeason(int season) {
+        JSONObject response = sendGet(formRequest(season, "", ""));
+        return Season.getFromJson(response);
+    }
+
+    public Season getSeason() {
+        if(this.season != 0) {
+            return getSeason(this.season);
         } else {
             return null;
         }
