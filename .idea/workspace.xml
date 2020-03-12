@@ -2,10 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9391ab45-9ac2-4b16-86c6-2c5e6a8529ac" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/structures/Ranking.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/structures/DistrictRankings.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/structures/TeamDistrictRanking.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/APIResponse.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/FRCAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/FRCAPI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/structures/MatchResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/structures/MatchResult.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/APIResponse.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/FRCAPI.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/FRCAPI.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -31,6 +34,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -65,7 +69,7 @@
       <workItem from="1583942920454" duration="4551000" />
       <workItem from="1583958365116" duration="263000" />
       <workItem from="1583958637137" duration="50000" />
-      <workItem from="1583958727230" duration="5112000" />
+      <workItem from="1583958727230" duration="6885000" />
     </task>
     <task id="LOCAL-00001" summary="Create API MatchResult retrival">
       <created>1583960370802</created>
@@ -81,7 +85,14 @@
       <option name="project" value="LOCAL" />
       <updated>1583962166755</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Implement getting match ranking endpoint">
+      <created>1583979047745</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1583979047745</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -90,61 +101,62 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Create API MatchResult retrival" />
     <MESSAGE value="Refactor API classes to use other form of request generation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactor API classes to use other form of request generation" />
+    <MESSAGE value="Implement getting match ranking endpoint" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implement getting match ranking endpoint" />
   </component>
   <component name="WindowStateProjectService">
     <state x="272" y="23" key="#Project_Structure" timestamp="1583961085881">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
     <state x="272" y="23" key="#Project_Structure/0.0.1360.728@0.0.1360.728" timestamp="1583961085881" />
-    <state x="825" y="84" key="#com.intellij.ide.util.MemberChooser" timestamp="1583963083034">
+    <state x="825" y="84" key="#com.intellij.ide.util.MemberChooser" timestamp="1583980090657">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state x="825" y="84" key="#com.intellij.ide.util.MemberChooser/0.0.1360.728@0.0.1360.728" timestamp="1583963083034" />
+    <state x="825" y="84" key="#com.intellij.ide.util.MemberChooser/0.0.1360.728@0.0.1360.728" timestamp="1583980090657" />
     <state x="626" y="136" key="#xdebugger.evaluate" timestamp="1583946004721">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
     <state x="626" y="136" key="#xdebugger.evaluate/0.0.1360.728@0.0.1360.728" timestamp="1583946004721" />
-    <state x="611" y="0" key="CommitChangelistDialog2" timestamp="1583962165915">
+    <state x="566" y="0" key="CommitChangelistDialog2" timestamp="1583979046981">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state x="611" y="0" key="CommitChangelistDialog2/0.0.1360.728@0.0.1360.728" timestamp="1583962165915" />
+    <state x="566" y="0" key="CommitChangelistDialog2/0.0.1360.728@0.0.1360.728" timestamp="1583979046981" />
     <state x="460" y="106" key="FileChooserDialogImpl" timestamp="1583959039073">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
     <state x="460" y="106" key="FileChooserDialogImpl/0.0.1360.728@0.0.1360.728" timestamp="1583959039073" />
-    <state width="1317" height="178" key="GridCell.Tab.0.bottom" timestamp="1583978989295">
+    <state width="1317" height="219" key="GridCell.Tab.0.bottom" timestamp="1583980621619">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state width="1317" height="178" key="GridCell.Tab.0.bottom/0.0.1360.728@0.0.1360.728" timestamp="1583978989295" />
-    <state width="1317" height="178" key="GridCell.Tab.0.center" timestamp="1583978989295">
+    <state width="1317" height="219" key="GridCell.Tab.0.bottom/0.0.1360.728@0.0.1360.728" timestamp="1583980621619" />
+    <state width="1317" height="219" key="GridCell.Tab.0.center" timestamp="1583980621619">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state width="1317" height="178" key="GridCell.Tab.0.center/0.0.1360.728@0.0.1360.728" timestamp="1583978989295" />
-    <state width="1317" height="178" key="GridCell.Tab.0.left" timestamp="1583978989295">
+    <state width="1317" height="219" key="GridCell.Tab.0.center/0.0.1360.728@0.0.1360.728" timestamp="1583980621619" />
+    <state width="1317" height="219" key="GridCell.Tab.0.left" timestamp="1583980621619">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state width="1317" height="178" key="GridCell.Tab.0.left/0.0.1360.728@0.0.1360.728" timestamp="1583978989295" />
-    <state width="1317" height="178" key="GridCell.Tab.0.right" timestamp="1583978989295">
+    <state width="1317" height="219" key="GridCell.Tab.0.left/0.0.1360.728@0.0.1360.728" timestamp="1583980621619" />
+    <state width="1317" height="219" key="GridCell.Tab.0.right" timestamp="1583980621619">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state width="1317" height="178" key="GridCell.Tab.0.right/0.0.1360.728@0.0.1360.728" timestamp="1583978989295" />
-    <state width="1317" height="219" key="GridCell.Tab.1.bottom" timestamp="1583978946158">
+    <state width="1317" height="219" key="GridCell.Tab.0.right/0.0.1360.728@0.0.1360.728" timestamp="1583980621619" />
+    <state width="1317" height="219" key="GridCell.Tab.1.bottom" timestamp="1583980621490">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state width="1317" height="219" key="GridCell.Tab.1.bottom/0.0.1360.728@0.0.1360.728" timestamp="1583978946158" />
-    <state width="1317" height="219" key="GridCell.Tab.1.center" timestamp="1583978946158">
+    <state width="1317" height="219" key="GridCell.Tab.1.bottom/0.0.1360.728@0.0.1360.728" timestamp="1583980621490" />
+    <state width="1317" height="219" key="GridCell.Tab.1.center" timestamp="1583980621490">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state width="1317" height="219" key="GridCell.Tab.1.center/0.0.1360.728@0.0.1360.728" timestamp="1583978946158" />
-    <state width="1317" height="219" key="GridCell.Tab.1.left" timestamp="1583978946158">
+    <state width="1317" height="219" key="GridCell.Tab.1.center/0.0.1360.728@0.0.1360.728" timestamp="1583980621490" />
+    <state width="1317" height="219" key="GridCell.Tab.1.left" timestamp="1583980621490">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state width="1317" height="219" key="GridCell.Tab.1.left/0.0.1360.728@0.0.1360.728" timestamp="1583978946158" />
-    <state width="1317" height="219" key="GridCell.Tab.1.right" timestamp="1583978946158">
+    <state width="1317" height="219" key="GridCell.Tab.1.left/0.0.1360.728@0.0.1360.728" timestamp="1583980621490" />
+    <state width="1317" height="219" key="GridCell.Tab.1.right" timestamp="1583980621490">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state width="1317" height="219" key="GridCell.Tab.1.right/0.0.1360.728@0.0.1360.728" timestamp="1583978946158" />
+    <state width="1317" height="219" key="GridCell.Tab.1.right/0.0.1360.728@0.0.1360.728" timestamp="1583980621490" />
     <state x="715" y="189" key="com.intellij.ide.util.TipDialog" timestamp="1583958804954">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
@@ -155,7 +167,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/FRCAPI.java</url>
-          <line>45</line>
+          <line>44</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>

@@ -7,16 +7,12 @@ import org.apache.http.impl.client.HttpClients;
 import org.apache.http.util.EntityUtils;
 import org.json.JSONArray;
 import org.json.JSONObject;
-import structures.Alliance;
-import structures.Award;
-import structures.MatchResult;
-import structures.Ranking;
+import structures.*;
 
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Base64;
 import java.util.List;
-import java.util.Objects;
 
 public class FRCAPI {
     private String authToken;
@@ -43,7 +39,11 @@ public class FRCAPI {
 
             if (entity != null) {
                 String result = EntityUtils.toString(entity);
-                return new JSONObject(result);
+                if(result.charAt(0) != '{') {
+                    throw new RuntimeException(result);
+                } else {
+                    return new JSONObject(result);
+                }
             }
 
         } catch (IOException e) {
@@ -59,7 +59,9 @@ public class FRCAPI {
         stringBuilder.append("/");
         stringBuilder.append(endpoint);
         stringBuilder.append("/");
-        stringBuilder.append(eventCode);
+        if (eventCode != null) {
+            stringBuilder.append(eventCode);
+        }
 
         for (Parameter arg : args) {
             if (arg.getValue() != null) {
@@ -188,5 +190,17 @@ public class FRCAPI {
         } else {
             return null;
         }
+    }
+
+    public DistrictRankings getDistrictRankings(int season, @NotNull String districtCode, Integer teamNumber, Integer top, Integer page) {
+        JSONObject response = sendGet(
+                formRequest(season, "rankings/district", districtCode,
+                        new Parameter("teamNumber", teamNumber),
+                        new Parameter("top", top),
+                        new Parameter("page", page)
+                )
+        );
+
+        return DistrictRankings.getFromJson(response);
     }
 }
