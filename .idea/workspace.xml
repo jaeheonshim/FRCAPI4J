@@ -3,26 +3,16 @@
   <component name="ChangeListManager">
     <list default="true" id="9391ab45-9ac2-4b16-86c6-2c5e6a8529ac" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/FRCAPI.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/structures/Alliance.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/structures/Award.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/structures/District.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/structures/Event.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/structures/HybridSchedule.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/structures/MatchResult.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/structures/Ranking.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/structures/Registration.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/structures/ScheduledMatch.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/structures/Season.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/structures/Team.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/structures/TeamAvatar.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/structures/TeamDistrictRanking.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/structures/TournamentLevel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/structures/listings/DistrictRankings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jaeheonshim/frcapi4j/structures/listings/DistrictRankings.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/structures/listings/TeamAvatarListings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jaeheonshim/frcapi4j/structures/listings/TeamAvatarListings.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/structures/listings/TeamListings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jaeheonshim/frcapi4j/structures/listings/TeamListings.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jaeheonshim/frcapi4j/FRCAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jaeheonshim/frcapi4j/FRCAPI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jaeheonshim/frcapi4j/FRCAPI$Parameter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jaeheonshim/frcapi4j/FRCAPI$Parameter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jaeheonshim/frcapi4j/FRCAPI.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jaeheonshim/frcapi4j/FRCAPI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jaeheonshim/frcapi4j/structures/HybridSchedule.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jaeheonshim/frcapi4j/structures/HybridSchedule.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jaeheonshim/frcapi4j/structures/MatchResult.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jaeheonshim/frcapi4j/structures/MatchResult.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jaeheonshim/frcapi4j/structures/ScheduledMatch.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jaeheonshim/frcapi4j/structures/ScheduledMatch.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jaeheonshim/frcapi4j/structures/Season.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jaeheonshim/frcapi4j/structures/Season.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jaeheonshim/frcapi4j/structures/listings/DistrictRankings.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jaeheonshim/frcapi4j/structures/listings/DistrictRankings.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jaeheonshim/frcapi4j/structures/listings/TeamAvatarListings.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jaeheonshim/frcapi4j/structures/listings/TeamAvatarListings.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jaeheonshim/frcapi4j/structures/listings/TeamListings.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jaeheonshim/frcapi4j/structures/listings/TeamListings.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,6 +82,9 @@
       <workItem from="1583958727230" duration="20103000" />
       <workItem from="1584546235133" duration="646000" />
       <workItem from="1584549649455" duration="3404000" />
+      <workItem from="1584556854675" duration="329000" />
+      <workItem from="1584557189147" duration="29000" />
+      <workItem from="1584557253370" duration="2433000" />
     </task>
     <task id="LOCAL-00001" summary="Create API MatchResult retrival">
       <created>1583960370802</created>
@@ -212,7 +205,8 @@
     <MESSAGE value="Add method overload without season for some methods" />
     <MESSAGE value="Finalize configurations and files for deployment" />
     <MESSAGE value="Update readme" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update readme" />
+    <MESSAGE value="Refactor classes into package structure" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactor classes into package structure" />
   </component>
   <component name="WindowStateProjectService">
     <state x="272" y="23" key="#Project_Structure" timestamp="1583961085881">
@@ -239,11 +233,11 @@
       <screen x="0" y="0" width="1360" height="728" />
     </state>
     <state x="626" y="136" key="#xdebugger.evaluate/0.0.1360.728@0.0.1360.728" timestamp="1583946004721" />
-    <state x="626" y="0" key="CommitChangelistDialog2" timestamp="1584551175173">
+    <state x="626" y="0" key="CommitChangelistDialog2" timestamp="1584556932202">
       <screen x="0" y="0" width="1504" height="963" />
     </state>
     <state x="566" y="0" key="CommitChangelistDialog2/0.0.1360.728@0.0.1360.728" timestamp="1584054278278" />
-    <state x="626" y="0" key="CommitChangelistDialog2/0.0.1504.963/-1920.167.1920.1040@0.0.1504.963" timestamp="1584551175173" />
+    <state x="626" y="0" key="CommitChangelistDialog2/0.0.1504.963/-1920.167.1920.1040@0.0.1504.963" timestamp="1584556932202" />
     <state x="256" y="61" key="DiffContextDialog" timestamp="1584030524889">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
@@ -252,26 +246,26 @@
       <screen x="0" y="0" width="1360" height="728" />
     </state>
     <state x="460" y="106" key="FileChooserDialogImpl/0.0.1360.728@0.0.1360.728" timestamp="1583959039073" />
-    <state width="1461" height="256" key="GridCell.Tab.0.bottom" timestamp="1584556848014">
+    <state width="1461" height="256" key="GridCell.Tab.0.bottom" timestamp="1584557183408">
       <screen x="0" y="0" width="1504" height="963" />
     </state>
     <state width="1317" height="215" key="GridCell.Tab.0.bottom/0.0.1360.728@0.0.1360.728" timestamp="1584053185937" />
-    <state width="1461" height="256" key="GridCell.Tab.0.bottom/0.0.1504.963/-1920.167.1920.1040@0.0.1504.963" timestamp="1584556848014" />
-    <state width="1461" height="256" key="GridCell.Tab.0.center" timestamp="1584556848014">
+    <state width="1461" height="256" key="GridCell.Tab.0.bottom/0.0.1504.963/-1920.167.1920.1040@0.0.1504.963" timestamp="1584557183408" />
+    <state width="1461" height="256" key="GridCell.Tab.0.center" timestamp="1584557183407">
       <screen x="0" y="0" width="1504" height="963" />
     </state>
     <state width="1317" height="215" key="GridCell.Tab.0.center/0.0.1360.728@0.0.1360.728" timestamp="1584053185937" />
-    <state width="1461" height="256" key="GridCell.Tab.0.center/0.0.1504.963/-1920.167.1920.1040@0.0.1504.963" timestamp="1584556848014" />
-    <state width="1461" height="256" key="GridCell.Tab.0.left" timestamp="1584556848014">
+    <state width="1461" height="256" key="GridCell.Tab.0.center/0.0.1504.963/-1920.167.1920.1040@0.0.1504.963" timestamp="1584557183407" />
+    <state width="1461" height="256" key="GridCell.Tab.0.left" timestamp="1584557183407">
       <screen x="0" y="0" width="1504" height="963" />
     </state>
     <state width="1317" height="215" key="GridCell.Tab.0.left/0.0.1360.728@0.0.1360.728" timestamp="1584053185937" />
-    <state width="1461" height="256" key="GridCell.Tab.0.left/0.0.1504.963/-1920.167.1920.1040@0.0.1504.963" timestamp="1584556848014" />
-    <state width="1461" height="256" key="GridCell.Tab.0.right" timestamp="1584556848014">
+    <state width="1461" height="256" key="GridCell.Tab.0.left/0.0.1504.963/-1920.167.1920.1040@0.0.1504.963" timestamp="1584557183407" />
+    <state width="1461" height="256" key="GridCell.Tab.0.right" timestamp="1584557183408">
       <screen x="0" y="0" width="1504" height="963" />
     </state>
     <state width="1317" height="215" key="GridCell.Tab.0.right/0.0.1360.728@0.0.1360.728" timestamp="1584053185937" />
-    <state width="1461" height="256" key="GridCell.Tab.0.right/0.0.1504.963/-1920.167.1920.1040@0.0.1504.963" timestamp="1584556848014" />
+    <state width="1461" height="256" key="GridCell.Tab.0.right/0.0.1504.963/-1920.167.1920.1040@0.0.1504.963" timestamp="1584557183408" />
     <state width="1317" height="215" key="GridCell.Tab.1.bottom" timestamp="1584053185938">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
@@ -288,10 +282,15 @@
       <screen x="0" y="0" width="1360" height="728" />
     </state>
     <state width="1317" height="215" key="GridCell.Tab.1.right/0.0.1360.728@0.0.1360.728" timestamp="1584053185937" />
-    <state x="802" y="76" key="RollbackChangesDialog" timestamp="1584049869495">
-      <screen x="0" y="0" width="1360" height="728" />
+    <state x="533" y="138" width="438" height="752" key="RefactorJ.IntroduceParameterObject" timestamp="1584559022757">
+      <screen x="0" y="0" width="1504" height="963" />
+    </state>
+    <state x="533" y="138" width="438" height="752" key="RefactorJ.IntroduceParameterObject/0.0.1504.963/-1920.167.1920.1040@0.0.1504.963" timestamp="1584559022757" />
+    <state x="887" y="101" key="RollbackChangesDialog" timestamp="1584557555918">
+      <screen x="0" y="0" width="1504" height="963" />
     </state>
     <state x="802" y="76" key="RollbackChangesDialog/0.0.1360.728@0.0.1360.728" timestamp="1584049869495" />
+    <state x="887" y="101" key="RollbackChangesDialog/0.0.1504.963/-1920.167.1920.1040@0.0.1504.963" timestamp="1584557555918" />
     <state x="254" y="125" key="SettingsEditor" timestamp="1584546847121">
       <screen x="0" y="0" width="1504" height="963" />
     </state>
@@ -301,11 +300,11 @@
     </state>
     <state x="272" y="98" key="Vcs.Push.Dialog.v2/0.0.1360.728@0.0.1360.728" timestamp="1584051556829" />
     <state x="301" y="130" key="Vcs.Push.Dialog.v2/0.0.1504.963/-1920.167.1920.1040@0.0.1504.963" timestamp="1584551233567" />
-    <state x="791" y="250" key="com.intellij.ide.util.TipDialog" timestamp="1584549649471">
+    <state x="791" y="250" key="com.intellij.ide.util.TipDialog" timestamp="1584557355887">
       <screen x="0" y="0" width="1504" height="963" />
     </state>
     <state x="715" y="189" key="com.intellij.ide.util.TipDialog/0.0.1360.728@0.0.1360.728" timestamp="1583958804954" />
-    <state x="791" y="250" key="com.intellij.ide.util.TipDialog/0.0.1504.963/-1920.167.1920.1040@0.0.1504.963" timestamp="1584549649471" />
+    <state x="791" y="250" key="com.intellij.ide.util.TipDialog/0.0.1504.963/-1920.167.1920.1040@0.0.1504.963" timestamp="1584557355887" />
     <state x="324" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1583981614888">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
@@ -314,17 +313,6 @@
       <screen x="0" y="0" width="1504" height="963" />
     </state>
     <state x="409" y="222" width="672" height="677" key="run.anything.popup/0.0.1504.963/-1920.167.1920.1040@0.0.1504.963" timestamp="1584546602622" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/jaeheonshim/frcapi4j/FRCAPI.java</url>
-          <line>44</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="com.vaadin.designer2.intellij.settings.SizePresetsSettingsComponent">
     <option name="sizePresets">
