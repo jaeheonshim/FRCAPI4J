@@ -7,10 +7,14 @@ FRCAPI4J is a Java library for interfacing with the [FIRST Events API](https://f
 Use the maven package to install FRCAPI4J
 
 ```
-
+<dependency>
+  <groupId>com.jaeheonshim</groupId>
+  <artifactId>FIRSTAPI4J</artifactId>
+  <version>0.1.0</version>
+</dependency> 
 ```
 
-Alternatively, download the jarfile and add that to your classpath manually.
+Alternatively, download the [jarfile](https://pkg.githubusercontent.com/246727341/e081f900-6917-11ea-9ab3-cbe1e8a41c0f?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20200318%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20200318T165946Z&X-Amz-Expires=300&X-Amz-Signature=4b6bd50bdc9350f2fd35b57345cf4dfb62dbd750628dd65caeb605473b0ed2f3&X-Amz-SignedHeaders=host&actor_id=35268332&response-content-disposition=filename%3DFIRSTAPI4J-0.1.0.jar&response-content-type=application%2Foctet-stream) and add that to your classpath manually.
 
 ## Usage
 

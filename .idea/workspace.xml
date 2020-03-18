@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9391ab45-9ac2-4b16-86c6-2c5e6a8529ac" name="Default Changelist" comment="Finalize configurations and files for deployment">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+    <list default="true" id="9391ab45-9ac2-4b16-86c6-2c5e6a8529ac" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/docs/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/FRCAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/FRCAPI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/FRCAPI.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/FRCAPI.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,7 +73,7 @@
       <workItem from="1583958637137" duration="50000" />
       <workItem from="1583958727230" duration="20103000" />
       <workItem from="1584546235133" duration="646000" />
-      <workItem from="1584549649455" duration="690000" />
+      <workItem from="1584549649455" duration="1339000" />
     </task>
     <task id="LOCAL-00001" summary="Create API MatchResult retrival">
       <created>1583960370802</created>
@@ -162,7 +159,14 @@
       <option name="project" value="LOCAL" />
       <updated>1584052377167</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Finalize configurations and files for deployment">
+      <created>1584550467987</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1584550467987</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -209,11 +213,11 @@
       <screen x="0" y="0" width="1360" height="728" />
     </state>
     <state x="626" y="136" key="#xdebugger.evaluate/0.0.1360.728@0.0.1360.728" timestamp="1583946004721" />
-    <state x="626" y="0" key="CommitChangelistDialog2" timestamp="1584550432456">
+    <state x="626" y="0" key="CommitChangelistDialog2" timestamp="1584550449319">
       <screen x="0" y="0" width="1504" height="963" />
     </state>
     <state x="566" y="0" key="CommitChangelistDialog2/0.0.1360.728@0.0.1360.728" timestamp="1584054278278" />
-    <state x="626" y="0" key="CommitChangelistDialog2/0.0.1504.963/-1920.167.1920.1040@0.0.1504.963" timestamp="1584550432456" />
+    <state x="626" y="0" key="CommitChangelistDialog2/0.0.1504.963/-1920.167.1920.1040@0.0.1504.963" timestamp="1584550449319" />
     <state x="256" y="61" key="DiffContextDialog" timestamp="1584030524889">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
