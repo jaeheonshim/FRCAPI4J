@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9391ab45-9ac2-4b16-86c6-2c5e6a8529ac" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/documentation.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/documentation.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/frcapi4j-0.1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/frcapi4j-0.1.0.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
     </list>
@@ -77,7 +78,7 @@
       <workItem from="1584549649455" duration="3404000" />
       <workItem from="1584556854675" duration="329000" />
       <workItem from="1584557189147" duration="29000" />
-      <workItem from="1584557253370" duration="3288000" />
+      <workItem from="1584557253370" duration="3536000" />
     </task>
     <task id="LOCAL-00001" summary="Create API MatchResult retrival">
       <created>1583960370802</created>
@@ -207,7 +208,8 @@
     <MESSAGE value="Update readme" />
     <MESSAGE value="Refactor classes into package structure" />
     <MESSAGE value="Add documentation to FRCAPI" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add documentation to FRCAPI" />
+    <MESSAGE value="Create documentation.md, add documentation to readme" />
+    <option name="LAST_COMMIT_MESSAGE" value="Create documentation.md, add documentation to readme" />
   </component>
   <component name="WindowStateProjectService">
     <state x="272" y="23" key="#Project_Structure" timestamp="1583961085881">
@@ -234,11 +236,11 @@
       <screen x="0" y="0" width="1360" height="728" />
     </state>
     <state x="626" y="136" key="#xdebugger.evaluate/0.0.1360.728@0.0.1360.728" timestamp="1583946004721" />
-    <state x="626" y="0" key="CommitChangelistDialog2" timestamp="1584559746915">
+    <state x="626" y="0" key="CommitChangelistDialog2" timestamp="1584560836779">
       <screen x="0" y="0" width="1504" height="963" />
     </state>
     <state x="566" y="0" key="CommitChangelistDialog2/0.0.1360.728@0.0.1360.728" timestamp="1584054278278" />
-    <state x="626" y="0" key="CommitChangelistDialog2/0.0.1504.963/-1920.167.1920.1040@0.0.1504.963" timestamp="1584559746915" />
+    <state x="626" y="0" key="CommitChangelistDialog2/0.0.1504.963/-1920.167.1920.1040@0.0.1504.963" timestamp="1584560836779" />
     <state x="256" y="61" key="DiffContextDialog" timestamp="1584030524889">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
@@ -296,11 +298,11 @@
       <screen x="0" y="0" width="1504" height="963" />
     </state>
     <state x="254" y="125" key="SettingsEditor/0.0.1504.963/-1920.167.1920.1040@0.0.1504.963" timestamp="1584546847121" />
-    <state x="301" y="130" key="Vcs.Push.Dialog.v2" timestamp="1584551233567">
+    <state x="301" y="130" key="Vcs.Push.Dialog.v2" timestamp="1584560858973">
       <screen x="0" y="0" width="1504" height="963" />
     </state>
     <state x="272" y="98" key="Vcs.Push.Dialog.v2/0.0.1360.728@0.0.1360.728" timestamp="1584051556829" />
-    <state x="301" y="130" key="Vcs.Push.Dialog.v2/0.0.1504.963/-1920.167.1920.1040@0.0.1504.963" timestamp="1584551233567" />
+    <state x="301" y="130" key="Vcs.Push.Dialog.v2/0.0.1504.963/-1920.167.1920.1040@0.0.1504.963" timestamp="1584560858973" />
     <state x="791" y="250" key="com.intellij.ide.util.TipDialog" timestamp="1584557355887">
       <screen x="0" y="0" width="1504" height="963" />
     </state>

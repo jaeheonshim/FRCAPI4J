@@ -1,4 +1,5 @@
 # Documentation
+The methods below are all found on instances of the FRCAPI class and are used to access the First Events API.
 
 ## `public List<Alliance> getEventAlliances(int season, @NotNull String eventCode)`
 
