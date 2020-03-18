@@ -2,9 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9391ab45-9ac2-4b16-86c6-2c5e6a8529ac" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/docs/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/FRCAPI.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/structures/Alliance.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/structures/Award.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/structures/District.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/structures/Event.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/structures/HybridSchedule.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/structures/MatchResult.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/structures/Ranking.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/structures/Registration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/structures/ScheduledMatch.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/structures/Season.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/structures/Team.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/structures/TeamAvatar.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/structures/TeamDistrictRanking.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/structures/TournamentLevel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/structures/listings/DistrictRankings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jaeheonshim/frcapi4j/structures/listings/DistrictRankings.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/structures/listings/TeamAvatarListings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jaeheonshim/frcapi4j/structures/listings/TeamAvatarListings.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/structures/listings/TeamListings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jaeheonshim/frcapi4j/structures/listings/TeamListings.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,8 +64,8 @@
   </component>
   <component name="RunManager">
     <configuration name="FRCAPI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="FRCAPI" />
-      <module name="FIRSTAPI4J" />
+      <option name="MAIN_CLASS_NAME" value="com.jaeheonshim.frcapi4j.structures.FRCAPI" />
+      <module name="FRCAPI4J" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -73,7 +91,7 @@
       <workItem from="1583958637137" duration="50000" />
       <workItem from="1583958727230" duration="20103000" />
       <workItem from="1584546235133" duration="646000" />
-      <workItem from="1584549649455" duration="1339000" />
+      <workItem from="1584549649455" duration="3404000" />
     </task>
     <task id="LOCAL-00001" summary="Create API MatchResult retrival">
       <created>1583960370802</created>
@@ -166,7 +184,14 @@
       <option name="project" value="LOCAL" />
       <updated>1584550467987</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Update readme">
+      <created>1584551198282</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1584551198282</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -186,7 +211,8 @@
     <MESSAGE value="Implement registration endpoint" />
     <MESSAGE value="Add method overload without season for some methods" />
     <MESSAGE value="Finalize configurations and files for deployment" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finalize configurations and files for deployment" />
+    <MESSAGE value="Update readme" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update readme" />
   </component>
   <component name="WindowStateProjectService">
     <state x="272" y="23" key="#Project_Structure" timestamp="1583961085881">
@@ -213,11 +239,11 @@
       <screen x="0" y="0" width="1360" height="728" />
     </state>
     <state x="626" y="136" key="#xdebugger.evaluate/0.0.1360.728@0.0.1360.728" timestamp="1583946004721" />
-    <state x="626" y="0" key="CommitChangelistDialog2" timestamp="1584550449319">
+    <state x="626" y="0" key="CommitChangelistDialog2" timestamp="1584551175173">
       <screen x="0" y="0" width="1504" height="963" />
     </state>
     <state x="566" y="0" key="CommitChangelistDialog2/0.0.1360.728@0.0.1360.728" timestamp="1584054278278" />
-    <state x="626" y="0" key="CommitChangelistDialog2/0.0.1504.963/-1920.167.1920.1040@0.0.1504.963" timestamp="1584550449319" />
+    <state x="626" y="0" key="CommitChangelistDialog2/0.0.1504.963/-1920.167.1920.1040@0.0.1504.963" timestamp="1584551175173" />
     <state x="256" y="61" key="DiffContextDialog" timestamp="1584030524889">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
@@ -226,26 +252,26 @@
       <screen x="0" y="0" width="1360" height="728" />
     </state>
     <state x="460" y="106" key="FileChooserDialogImpl/0.0.1360.728@0.0.1360.728" timestamp="1583959039073" />
-    <state width="1461" height="256" key="GridCell.Tab.0.bottom" timestamp="1584549736170">
+    <state width="1461" height="256" key="GridCell.Tab.0.bottom" timestamp="1584556848014">
       <screen x="0" y="0" width="1504" height="963" />
     </state>
     <state width="1317" height="215" key="GridCell.Tab.0.bottom/0.0.1360.728@0.0.1360.728" timestamp="1584053185937" />
-    <state width="1461" height="256" key="GridCell.Tab.0.bottom/0.0.1504.963/-1920.167.1920.1040@0.0.1504.963" timestamp="1584549736170" />
-    <state width="1461" height="256" key="GridCell.Tab.0.center" timestamp="1584549736170">
+    <state width="1461" height="256" key="GridCell.Tab.0.bottom/0.0.1504.963/-1920.167.1920.1040@0.0.1504.963" timestamp="1584556848014" />
+    <state width="1461" height="256" key="GridCell.Tab.0.center" timestamp="1584556848014">
       <screen x="0" y="0" width="1504" height="963" />
     </state>
     <state width="1317" height="215" key="GridCell.Tab.0.center/0.0.1360.728@0.0.1360.728" timestamp="1584053185937" />
-    <state width="1461" height="256" key="GridCell.Tab.0.center/0.0.1504.963/-1920.167.1920.1040@0.0.1504.963" timestamp="1584549736170" />
-    <state width="1461" height="256" key="GridCell.Tab.0.left" timestamp="1584549736170">
+    <state width="1461" height="256" key="GridCell.Tab.0.center/0.0.1504.963/-1920.167.1920.1040@0.0.1504.963" timestamp="1584556848014" />
+    <state width="1461" height="256" key="GridCell.Tab.0.left" timestamp="1584556848014">
       <screen x="0" y="0" width="1504" height="963" />
     </state>
     <state width="1317" height="215" key="GridCell.Tab.0.left/0.0.1360.728@0.0.1360.728" timestamp="1584053185937" />
-    <state width="1461" height="256" key="GridCell.Tab.0.left/0.0.1504.963/-1920.167.1920.1040@0.0.1504.963" timestamp="1584549736170" />
-    <state width="1461" height="256" key="GridCell.Tab.0.right" timestamp="1584549736170">
+    <state width="1461" height="256" key="GridCell.Tab.0.left/0.0.1504.963/-1920.167.1920.1040@0.0.1504.963" timestamp="1584556848014" />
+    <state width="1461" height="256" key="GridCell.Tab.0.right" timestamp="1584556848014">
       <screen x="0" y="0" width="1504" height="963" />
     </state>
     <state width="1317" height="215" key="GridCell.Tab.0.right/0.0.1360.728@0.0.1360.728" timestamp="1584053185937" />
-    <state width="1461" height="256" key="GridCell.Tab.0.right/0.0.1504.963/-1920.167.1920.1040@0.0.1504.963" timestamp="1584549736170" />
+    <state width="1461" height="256" key="GridCell.Tab.0.right/0.0.1504.963/-1920.167.1920.1040@0.0.1504.963" timestamp="1584556848014" />
     <state width="1317" height="215" key="GridCell.Tab.1.bottom" timestamp="1584053185938">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
@@ -270,10 +296,11 @@
       <screen x="0" y="0" width="1504" height="963" />
     </state>
     <state x="254" y="125" key="SettingsEditor/0.0.1504.963/-1920.167.1920.1040@0.0.1504.963" timestamp="1584546847121" />
-    <state x="272" y="98" key="Vcs.Push.Dialog.v2" timestamp="1584051556829">
-      <screen x="0" y="0" width="1360" height="728" />
+    <state x="301" y="130" key="Vcs.Push.Dialog.v2" timestamp="1584551233567">
+      <screen x="0" y="0" width="1504" height="963" />
     </state>
     <state x="272" y="98" key="Vcs.Push.Dialog.v2/0.0.1360.728@0.0.1360.728" timestamp="1584051556829" />
+    <state x="301" y="130" key="Vcs.Push.Dialog.v2/0.0.1504.963/-1920.167.1920.1040@0.0.1504.963" timestamp="1584551233567" />
     <state x="791" y="250" key="com.intellij.ide.util.TipDialog" timestamp="1584549649471">
       <screen x="0" y="0" width="1504" height="963" />
     </state>
@@ -292,7 +319,7 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/FRCAPI.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/com/jaeheonshim/frcapi4j/FRCAPI.java</url>
           <line>44</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
