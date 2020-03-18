@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9391ab45-9ac2-4b16-86c6-2c5e6a8529ac" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/structures/listings/TeamAvatarListings.java" afterDir="false" />
+    <list default="true" id="9391ab45-9ac2-4b16-86c6-2c5e6a8529ac" name="Default Changelist" comment="Finalize configurations and files for deployment">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/FRCAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/FRCAPI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/structures/DistrictRankings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/structures/listings/DistrictRankings.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/structures/TeamListings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/structures/listings/TeamListings.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/FRCAPI.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/FRCAPI.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -40,6 +40,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
     <key name="MoveInnerDialog.RECENTS_KEY">
@@ -74,6 +75,8 @@
       <workItem from="1583958365116" duration="263000" />
       <workItem from="1583958637137" duration="50000" />
       <workItem from="1583958727230" duration="20103000" />
+      <workItem from="1584546235133" duration="646000" />
+      <workItem from="1584549649455" duration="690000" />
     </task>
     <task id="LOCAL-00001" summary="Create API MatchResult retrival">
       <created>1583960370802</created>
@@ -178,7 +181,8 @@
     <MESSAGE value="Implement teamlisting endpoint" />
     <MESSAGE value="Implement registration endpoint" />
     <MESSAGE value="Add method overload without season for some methods" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add method overload without season for some methods" />
+    <MESSAGE value="Finalize configurations and files for deployment" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finalize configurations and files for deployment" />
   </component>
   <component name="WindowStateProjectService">
     <state x="272" y="23" key="#Project_Structure" timestamp="1583961085881">
@@ -205,10 +209,11 @@
       <screen x="0" y="0" width="1360" height="728" />
     </state>
     <state x="626" y="136" key="#xdebugger.evaluate/0.0.1360.728@0.0.1360.728" timestamp="1583946004721" />
-    <state x="566" y="0" key="CommitChangelistDialog2" timestamp="1584054278278">
-      <screen x="0" y="0" width="1360" height="728" />
+    <state x="626" y="0" key="CommitChangelistDialog2" timestamp="1584550432456">
+      <screen x="0" y="0" width="1504" height="963" />
     </state>
     <state x="566" y="0" key="CommitChangelistDialog2/0.0.1360.728@0.0.1360.728" timestamp="1584054278278" />
+    <state x="626" y="0" key="CommitChangelistDialog2/0.0.1504.963/-1920.167.1920.1040@0.0.1504.963" timestamp="1584550432456" />
     <state x="256" y="61" key="DiffContextDialog" timestamp="1584030524889">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
@@ -217,22 +222,26 @@
       <screen x="0" y="0" width="1360" height="728" />
     </state>
     <state x="460" y="106" key="FileChooserDialogImpl/0.0.1360.728@0.0.1360.728" timestamp="1583959039073" />
-    <state width="1317" height="215" key="GridCell.Tab.0.bottom" timestamp="1584053185937">
-      <screen x="0" y="0" width="1360" height="728" />
+    <state width="1461" height="256" key="GridCell.Tab.0.bottom" timestamp="1584549736170">
+      <screen x="0" y="0" width="1504" height="963" />
     </state>
     <state width="1317" height="215" key="GridCell.Tab.0.bottom/0.0.1360.728@0.0.1360.728" timestamp="1584053185937" />
-    <state width="1317" height="215" key="GridCell.Tab.0.center" timestamp="1584053185937">
-      <screen x="0" y="0" width="1360" height="728" />
+    <state width="1461" height="256" key="GridCell.Tab.0.bottom/0.0.1504.963/-1920.167.1920.1040@0.0.1504.963" timestamp="1584549736170" />
+    <state width="1461" height="256" key="GridCell.Tab.0.center" timestamp="1584549736170">
+      <screen x="0" y="0" width="1504" height="963" />
     </state>
     <state width="1317" height="215" key="GridCell.Tab.0.center/0.0.1360.728@0.0.1360.728" timestamp="1584053185937" />
-    <state width="1317" height="215" key="GridCell.Tab.0.left" timestamp="1584053185937">
-      <screen x="0" y="0" width="1360" height="728" />
+    <state width="1461" height="256" key="GridCell.Tab.0.center/0.0.1504.963/-1920.167.1920.1040@0.0.1504.963" timestamp="1584549736170" />
+    <state width="1461" height="256" key="GridCell.Tab.0.left" timestamp="1584549736170">
+      <screen x="0" y="0" width="1504" height="963" />
     </state>
     <state width="1317" height="215" key="GridCell.Tab.0.left/0.0.1360.728@0.0.1360.728" timestamp="1584053185937" />
-    <state width="1317" height="215" key="GridCell.Tab.0.right" timestamp="1584053185937">
-      <screen x="0" y="0" width="1360" height="728" />
+    <state width="1461" height="256" key="GridCell.Tab.0.left/0.0.1504.963/-1920.167.1920.1040@0.0.1504.963" timestamp="1584549736170" />
+    <state width="1461" height="256" key="GridCell.Tab.0.right" timestamp="1584549736170">
+      <screen x="0" y="0" width="1504" height="963" />
     </state>
     <state width="1317" height="215" key="GridCell.Tab.0.right/0.0.1360.728@0.0.1360.728" timestamp="1584053185937" />
+    <state width="1461" height="256" key="GridCell.Tab.0.right/0.0.1504.963/-1920.167.1920.1040@0.0.1504.963" timestamp="1584549736170" />
     <state width="1317" height="215" key="GridCell.Tab.1.bottom" timestamp="1584053185938">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
@@ -253,18 +262,27 @@
       <screen x="0" y="0" width="1360" height="728" />
     </state>
     <state x="802" y="76" key="RollbackChangesDialog/0.0.1360.728@0.0.1360.728" timestamp="1584049869495" />
+    <state x="254" y="125" key="SettingsEditor" timestamp="1584546847121">
+      <screen x="0" y="0" width="1504" height="963" />
+    </state>
+    <state x="254" y="125" key="SettingsEditor/0.0.1504.963/-1920.167.1920.1040@0.0.1504.963" timestamp="1584546847121" />
     <state x="272" y="98" key="Vcs.Push.Dialog.v2" timestamp="1584051556829">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
     <state x="272" y="98" key="Vcs.Push.Dialog.v2/0.0.1360.728@0.0.1360.728" timestamp="1584051556829" />
-    <state x="715" y="189" key="com.intellij.ide.util.TipDialog" timestamp="1583958804954">
-      <screen x="0" y="0" width="1360" height="728" />
+    <state x="791" y="250" key="com.intellij.ide.util.TipDialog" timestamp="1584549649471">
+      <screen x="0" y="0" width="1504" height="963" />
     </state>
     <state x="715" y="189" key="com.intellij.ide.util.TipDialog/0.0.1360.728@0.0.1360.728" timestamp="1583958804954" />
+    <state x="791" y="250" key="com.intellij.ide.util.TipDialog/0.0.1504.963/-1920.167.1920.1040@0.0.1504.963" timestamp="1584549649471" />
     <state x="324" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1583981614888">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
     <state x="324" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1360.728@0.0.1360.728" timestamp="1583981614888" />
+    <state x="409" y="222" width="672" height="677" key="run.anything.popup" timestamp="1584546602622">
+      <screen x="0" y="0" width="1504" height="963" />
+    </state>
+    <state x="409" y="222" width="672" height="677" key="run.anything.popup/0.0.1504.963/-1920.167.1920.1040@0.0.1504.963" timestamp="1584546602622" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -276,5 +294,26 @@
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="com.vaadin.designer2.intellij.settings.SizePresetsSettingsComponent">
+    <option name="sizePresets">
+      <list>
+        <SizePreset>
+          <option name="caption" value="Phone" />
+          <option name="height" value="568" />
+          <option name="width" value="320" />
+        </SizePreset>
+        <SizePreset>
+          <option name="caption" value="Tablet" />
+          <option name="height" value="1024" />
+          <option name="width" value="768" />
+        </SizePreset>
+        <SizePreset>
+          <option name="caption" value="Desktop" />
+          <option name="height" value="900" />
+          <option name="width" value="1440" />
+        </SizePreset>
+      </list>
+    </option>
   </component>
 </project>
