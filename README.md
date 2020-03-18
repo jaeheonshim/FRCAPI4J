@@ -14,7 +14,7 @@ Use the maven package to install FRCAPI4J
 </dependency>
 ```
 
-Alternatively, download the [jarfile](https://pkg.githubusercontent.com/246727341/e081f900-6917-11ea-9ab3-cbe1e8a41c0f?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20200318%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20200318T165946Z&X-Amz-Expires=300&X-Amz-Signature=4b6bd50bdc9350f2fd35b57345cf4dfb62dbd750628dd65caeb605473b0ed2f3&X-Amz-SignedHeaders=host&actor_id=35268332&response-content-disposition=filename%3DFIRSTAPI4J-0.1.0.jar&response-content-type=application%2Foctet-stream) and add that to your classpath manually.
+Alternatively, download the [jarfile from the releases](https://github.com/jaeheonshim/FRCAPI4J/releases) and add that to your classpath manually.
 
 ## Usage
 **Note: You'll need to register for access to the FIRST API in order to use this library. If you don't have API credentials yet, you can obtain them here: https://frc-events.firstinspires.org/services/API/register**
@@ -34,7 +34,8 @@ Optionally, you can provide the current season as a third parameter for the cons
 com.jaeheonshim.frcapi4j.FRCAPI api = new com.jaeheonshim.frcapi4j.FRCAPI("username", "password", 2020);
 ```
 
-You can access the official documentation for the FIRST events API [here](https://frcevents2.docs.apiary.io/).
+You can access the official documentation for the FIRST events API [here](https://frcevents2.docs.apiary.io/).  
+The full documentation for this library is available here: [documentation](documentation.md)
 
 ### Making a request
 First, find the method in the com.jaeheonshim.frcapi4j.FRCAPI class that corresponds with the endpoint of the FIRST API you'd like to make a request to. For example, let's say that we wanted to find the team listing for the 2020 season.
